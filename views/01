@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<title>按钮插件</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		a:focus {
+			outline: none;
+		}
+	</style>
+</head>
+<body style="margin: 200px;">
+	
+<button class="btn btn-primary" data-toggle="collapse" data-target="#content">Bootstrap</button>
+<div class="collapse" id="content">
+	<div class="well">Bootstrap 是 Twitter 推出的一个用于前端开发的开源工具包。它由Twitter 的设计师 Mark Otto 和 Jacob Thornton 合作开发,是一个 CSS/HTML 框架。目前,Bootstrap 最新版本为 3.0 。</div>
+</div>
+
+<!--手风琴折叠-->
+<!--<div class="panel-group" id="accordion">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a href="#collapseOne" data-toggle="collapse" data-parent="#accordion">点击我进行展示，再点击我进行折叠，第一部分</a>
+			</h4>
+		</div>
+		<div id="collapseOne" class="panel-collapse collapse in">
+			<div class="panel-body">
+				这里是第一部分。
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a href="#collapseTwo" data-toggle="collapse" data-parent="#accordion">点击我进行展示，再点击我进行折叠，第二部分</a>
+			</h4>
+		</div>
+		<div id="collapseTwo" class="panel-collapse collapse">
+			<div class="panel-body">
+				这里是第二部分。
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a href="#collapseThree" data-toggle="collapse" data-parent="#accordion">点击我进行展示，再点击我进行折叠，第三部分</a>
+			</h4>
+		</div>
+		<div id="collapseThree" class="panel-collapse collapse">
+			<div class="panel-body">
+				这里是第三部分。
+			</div>
+		</div>
+	</div>
+</div>-->
+
+<!--js实现手风琴折叠-->
+<div class="panel-group" id="accordion">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a href="#collapseOne" data-toggle="collapse">点击我进行展示，再点击我进行折叠，第一部分</a>
+			</h4>
+		</div>
+		<div id="collapseOne" class="panel-collapse collapse in">
+			<div class="panel-body">
+				这里是第一部分。
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a href="#collapseTwo" data-toggle="collapse">点击我进行展示，再点击我进行折叠，第二部分</a>
+			</h4>
+		</div>
+		<div id="collapseTwo" class="panel-collapse collapse">
+			<div class="panel-body">
+				这里是第二部分。
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a href="#collapseThree" data-toggle="collapse">点击我进行展示，再点击我进行折叠，第三部分</a>
+			</h4>
+		</div>
+		<div id="collapseThree" class="panel-collapse collapse">
+			<div class="panel-body">
+				这里是第三部分。
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$('#collapseOne, #collapseTwo, #collapseThree').collapse({
+		parent : '#accordion',
+		toggle : false,
+	});
+
+</script>
+</body>
+</html>
